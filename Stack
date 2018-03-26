@@ -1,0 +1,36 @@
+/**************************************************************************
+ *
+ * Created by: Peter Zhu
+ * Created on: March
+ * This is a stack
+ *
+ ****************************************************************************/
+import java.util.*;
+
+public class stack {  
+        public static void main(String[] args)
+       {
+                Stack<String>  stack = new Stack<String> ();
+                stack.push("A");
+                printStack(stack);
+                stack.push("B");
+                printStack(stack);
+                stack.push("C");
+                printStack(stack);
+                
+                stack.pop();
+                printStack(stack);
+                stack.pop();
+                printStack(stack);
+                stack.pop();
+                printStack(stack);
+       }
+       
+       private static void printStack(Stack<String> s){
+             if (s.isEmpty())
+                     System.out.println("You have an empty stack");
+             else 
+                      System.out.printf("%s TOP\n", s);
+       }
+       
+}
